@@ -379,3 +379,5 @@
 [INFO ]2024-04-2807:39:13.477[TestNG-PoolService-1]com.lms.ui.utilities.LoggerLoad1)-Testing on chrome
 [INFO ]2024-04-2807:40:40.094[TestNG-PoolService-1]com.lms.ui.utilities.LoggerLoad1)-Testing on chrome
 [INFO ]2024-04-2807:40:40.094[TestNG-PoolService-0]com.lms.ui.utilities.LoggerLoad1)-Testing on chrome
+[INFO ]2024-04-2807:42:23.937[main]com.lms.ui.utilities.LoggerLoad1)-Testing on chrome
+[INFO ]2024-04-2807:43:13.436[main]com.lms.ui.utilities.LoggerLoad1)-Testing on chrome
