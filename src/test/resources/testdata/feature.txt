@@ -1,0 +1,43 @@
+Scenario: Admin should see the +Add New User popup
+Given Admin is on Manage User page
+When Admin clicks "Add New User" button
+Then Admin should able to see "Add New User" popup
+
+Scenario: Validate User Details Popup Window
+Given Admin is on Manage User page
+When  Admin clicks "Add New User" button
+Then Admin should able to see all "Fields"
+| Field |
+| First name |
+| Middle name |
+| Last name|
+| Location |
+| Phone no |
+| LinkedIn Url |
+| Under Graduate |
+| Post Graduate |
+| Time Zone |
+| User Comments |
+| Cancel |
+| Submit |
+| User Role |
+| User Role Status |
+| User Visa Status |
+| Email address |
+
+Scenario: Validate input fields and text boxes in user details form
+Given Admin is on Manage User page
+When  Admin clicks "Add New User" button
+Then Admin should able to see all "TextBoxes"
+| Field |
+| First name |
+| Middle name |
+| Last name|
+| Location |
+| Phone no |
+| LinkedIn Url |
+| Under Graduate |
+| Post Graduate |
+| Time Zone |
+| User Comments |
+| Email address |
