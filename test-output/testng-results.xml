@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-28T07:41:48 GMT-04:00" name="Default suite" finished-at="2024-04-28T07:41:54 GMT-04:00" duration-ms="6033">
+  <suite started-at="2024-04-28T22:57:41 GMT-04:00" name="Default suite" finished-at="2024-04-28T22:59:23 GMT-04:00" duration-ms="102069">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@10289886]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-28T07:41:48 GMT-04:00" name="Default test" finished-at="2024-04-28T07:41:54 GMT-04:00" duration-ms="6033">
+    <test started-at="2024-04-28T22:57:41 GMT-04:00" name="Default test" finished-at="2024-04-28T22:59:23 GMT-04:00" duration-ms="102069">
       <class name="com.lms.ui.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.lms.ui.runner.TestRunner@10289886]" started-at="2024-04-28T07:41:48 GMT-04:00" name="setUpClass" finished-at="2024-04-28T07:41:49 GMT-04:00" duration-ms="1107" status="PASS">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:41 GMT-04:00" name="defineBrowser" finished-at="2024-04-28T22:57:41 GMT-04:00" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6ef1c3f7]]>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:41 GMT-04:00" name="setUpClass" finished-at="2024-04-28T22:57:42 GMT-04:00" duration-ms="1063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@794240e2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@10289886]" started-at="2024-04-28T07:41:49 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T07:41:50 GMT-04:00" duration-ms="347" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:48 GMT-04:00" duration-ms="65939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate input fields and text boxes in user details form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:53 GMT-04:00" duration-ms="70990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,91 +61,58 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[browser not specified in the testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: browser not specified in the testng.xml
-at com.lms.ui.configs.ConfigLoader.getBrowserType(ConfigLoader.java:12)
-at com.lms.ui.utilities.Base.WebDriverManager(Base.java:23)
-at com.lms.ui.utilities.TestContextSetUp.<init>(TestContextSetUp.java:11)
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@10289886]" started-at="2024-04-28T07:41:50 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T07:41:50 GMT-04:00" duration-ms="33" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:47 GMT-04:00" duration-ms="65787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate input fields and text boxes in user details form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:46 GMT-04:00" duration-ms="64707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Cancel/Close(X) icon on User Details form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:47 GMT-04:00" duration-ms="65385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Empty form submission"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:59:18 GMT-04:00" duration-ms="96479" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,91 +125,106 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[browser not specified in the testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: browser not specified in the testng.xml
-at com.lms.ui.configs.ConfigLoader.getBrowserType(ConfigLoader.java:12)
-at com.lms.ui.utilities.Base.WebDriverManager(Base.java:23)
-at com.lms.ui.utilities.TestContextSetUp.<init>(TestContextSetUp.java:11)
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.lms.ui.runner.TestRunner@10289886]" started-at="2024-04-28T07:41:50 GMT-04:00" name="tearDownClass" finished-at="2024-04-28T07:41:54 GMT-04:00" duration-ms="4416" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:56 GMT-04:00" duration-ms="74115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check if user is created when invalid data is entered in all of the fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:48 GMT-04:00" duration-ms="66088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate User Details Popup Window"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:38 GMT-04:00" duration-ms="56420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user is created when only optional fields are entered with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:48 GMT-04:00" duration-ms="66031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin should see the +Add New User popup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:58:38 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:59:02 GMT-04:00" duration-ms="23484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user is created when only mandatory fields are entered with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:58:46 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:55 GMT-04:00" duration-ms="8505" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin should see the +Assign Student button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:59:18 GMT-04:00" name="tearDownClass" finished-at="2024-04-28T22:59:23 GMT-04:00" duration-ms="4442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

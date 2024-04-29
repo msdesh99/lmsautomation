@@ -16,10 +16,16 @@ public class FilloExcel {
 	public FilloExcel() {
 	}
 	public static List<Map<String,String>> getData(String fileName, String sheetName,String runType) {
+		
 		List<Map<String,String>> dataMapList = new ArrayList<Map<String,String>>();
 		Map<String,String> dataMap = new HashMap<String,String>();
 		Fillo fillo = new Fillo();
-		String query = String.format("Select * from %s Where run = '%s'", sheetName, runType);
+		//String query = String.format("Select * from %s Where run = '%s'", sheetName, runType);
+		String query = String.format("Select * from %s Where run like '%s'", sheetName, runType);
+
+		//String multiRun= "skip%";
+		//String query = String.format("Select * from %s Where run like '%s'", sheetName, multiRun);
+
 		try {
 			//System.out.println("filename fill: "+fileName);
 			//System.out.println("query fill: "+query);

@@ -9,7 +9,7 @@ import com.lms.ui.configs.ConfigLoader;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
-@CucumberOptions(  tags =("@tag21 or @tag22"),
+@CucumberOptions(  // tags = ("@tag24"), //@tag22Extra or @tag21 or @tag23"), // @tag23"),//tags =("@tag19A"), // or @tag23"),
 		           features = "src/test/resources/features",
 					glue = {"com/lms/ui/stepdefinitions"},
 				 // tags= "@LinkedList",

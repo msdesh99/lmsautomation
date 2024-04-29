@@ -24,7 +24,7 @@ TestContextSetUp testContextSetup;
 	@After
 	public void AfterScenario() throws Throwable
 	{
-		//testContextSetup.base.WebDriverManager().quit();
+		testContextSetup.base.WebDriverManager().quit();
 	}
 	@AfterStep
 	public void AddScreenshot(Scenario scenario) throws Throwable
