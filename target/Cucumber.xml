@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="9.011" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="User Page Validation" name="Empty form submission" time="8.628">
+<system-out><![CDATA[
+Given Admin is on dashboardpage after login.................................passed
+When Admin Clicks user from Navigation Bar..................................passed
+Then Admin Should see a heading Manage User.................................passed
+Given Admin is on Manage User page..........................................passed
+And Admin is on  "Add New User" popup window................................passed
+When Admin enters "without data" in the form and clicks on "Submit" button..passed
+Then Admin should see error message below the test field and the field will be highlighed in red color.passed
+]]></system-out>
+</testcase>
+</testsuite>

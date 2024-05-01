@@ -30,11 +30,13 @@ public class UserPage {
     private By errorMessage = By.xpath("//div[contains(@class,'transitionMessages')]//mat-error");
 	private By closeIcon = By.xpath("//div[contains(@class,'header-icons')]//span");
 	private List<String> popupTextBox ;
+	
 	List<Map<String,String>> dataMapList;
 	Map<String,String> dataMap = new HashMap<String,String>();
 	Map<String,String> dataMapMulti;
 
-
+	
+	
 	public UserPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -53,6 +55,8 @@ public class UserPage {
     	if(button.contentEquals("Assign Student"))
     		driver.findElement(assignStudent).click();
      }
+   
+    
     public String validate() {
     	return driver.findElement(By.className("box")).getText();
     }
@@ -115,7 +119,6 @@ public class UserPage {
     	   
     	  // sendDataToDropDown(dataMap);
     	   sendDropDown(dataMap);
-
     	   Thread.sleep(1000);
     	   
     	   clickSubmit(actionType);
@@ -200,6 +203,84 @@ public class UserPage {
     	}
     	}
     }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public void sendDataToTextBoxes(Map<String,String> dataMap) {
     	List<WebElement> textBoxList = driver.findElements(textBoxes);
     	for(WebElement inputField: textBoxList) {
@@ -210,6 +291,15 @@ public class UserPage {
     	 }	
     	}    	
     }
+   
+    
+    
+    
+    
+    
+    
+    
+    
     public void sendDropDown(Map<String,String> dataMap) throws InterruptedException {
     	String dropdownType="";
     	List<WebElement> allDropdownList = driver.findElements(allDropDown);

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-28T22:57:41 GMT-04:00" name="Default suite" finished-at="2024-04-28T22:59:23 GMT-04:00" duration-ms="102069">
+  <suite started-at="2024-04-29T09:55:45 GMT-04:00" name="Default suite" finished-at="2024-04-29T09:55:57 GMT-04:00" duration-ms="12870">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-28T22:57:41 GMT-04:00" name="Default test" finished-at="2024-04-28T22:59:23 GMT-04:00" duration-ms="102069">
+    <test started-at="2024-04-29T09:55:45 GMT-04:00" name="Default test" finished-at="2024-04-29T09:55:57 GMT-04:00" duration-ms="12870">
       <class name="com.lms.ui.runner.TestRunner">
-        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:41 GMT-04:00" name="defineBrowser" finished-at="2024-04-28T22:57:41 GMT-04:00" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-29T09:55:45 GMT-04:00" name="defineBrowser" finished-at="2024-04-29T09:55:45 GMT-04:00" duration-ms="33" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,82 +21,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- defineBrowser -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:41 GMT-04:00" name="setUpClass" finished-at="2024-04-28T22:57:42 GMT-04:00" duration-ms="1063" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-29T09:55:45 GMT-04:00" name="setUpClass" finished-at="2024-04-29T09:55:46 GMT-04:00" duration-ms="872" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@794240e2]]>
+                <![CDATA[org.testng.TestRunner@53d6e959]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:48 GMT-04:00" duration-ms="65939" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate input fields and text boxes in user details form"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:53 GMT-04:00" duration-ms="70990" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check if user is created when only mandatory fields are entered with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:47 GMT-04:00" duration-ms="65787" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate input fields and text boxes in user details form"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:46 GMT-04:00" duration-ms="64707" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate Cancel/Close(X) icon on User Details form"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:47 GMT-04:00" duration-ms="65385" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-29T09:55:46 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T09:55:54 GMT-04:00" duration-ms="8803" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,119 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:59:18 GMT-04:00" duration-ms="96479" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check if user is created when only optional fields are entered with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:56 GMT-04:00" duration-ms="74115" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["check if user is created when invalid data is entered in all of the fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:48 GMT-04:00" duration-ms="66088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate User Details Popup Window"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:38 GMT-04:00" duration-ms="56420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check if user is created when only optional fields are entered with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:57:42 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:48 GMT-04:00" duration-ms="66031" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Admin should see the +Add New User popup"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:58:38 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:59:02 GMT-04:00" duration-ms="23484" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check if user is created when only mandatory fields are entered with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:58:46 GMT-04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T22:58:55 GMT-04:00" duration-ms="8505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Admin should see the +Assign Student button"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-28T22:59:18 GMT-04:00" name="tearDownClass" finished-at="2024-04-28T22:59:23 GMT-04:00" duration-ms="4442" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.lms.ui.runner.TestRunner@50029372]" started-at="2024-04-29T09:55:54 GMT-04:00" name="tearDownClass" finished-at="2024-04-29T09:55:57 GMT-04:00" duration-ms="3034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

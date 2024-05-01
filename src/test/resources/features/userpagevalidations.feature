@@ -92,12 +92,12 @@ Then Admin can see the User details popup disappears without adding any user
 #When Admin enters "all fields" in the form and clicks on "Submit" button
 #Then The newly added user should be present in the data table in Manage User page
 
-#@tag28
-#Scenario: Validate row level edit icon
-#Given Admin is on Manage User page
-#When Admin clicks on the edit icon 
-#Then A new pop up with User details
 
+@tag28
+Scenario: Validate User Details Popup Window
+Given Admin is on Manage User page
+When  Admin clicks "Edit" button
+Then  Admin checks "userdetailsfields" in the form
 @tag5
 Scenario: Admin should see the +Assign Student button
 Given Admin is on Manage User page
